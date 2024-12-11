@@ -91,8 +91,8 @@ const Playlist = () => {
       {currentSong && (
         <div className="mt-8">
           <h3 className="text-xl font-semibold mb-4 text-center text-blue-600">Now Playing</h3>
-          <div className='w-full lg:w-2/3 p-4 mx-auto'>
-            <YouTube videoId={currentSong} opts={{ width: '100%', height: '500' }} />
+          <div className='w-full lg:w-2/3 p-1 lg:p-4 mx-auto rounded-lg border-2'>
+            <YouTube className='h-auto w-full lg:h-[500px] rounded-lg' videoId={currentSong} opts={{ width: '100%', height: '500', playerVars: { autoplay: 1, } }} />
           </div>
         </div>
       )}

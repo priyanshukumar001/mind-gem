@@ -28,6 +28,7 @@
 
 
 import Link from 'next/link';
+import Chatbot from './components/Chatbot';
 
 export default function Home() {
   return (
@@ -51,6 +52,7 @@ export default function Home() {
           <Link href="/auth" className="inline-block bg-blue-500 text-white px-8 py-3 rounded-full hover:bg-blue-600 transition-colors shadow-lg">
             Get Started
           </Link>
+          <Chatbot />
         </div>
       </div>
     </div>

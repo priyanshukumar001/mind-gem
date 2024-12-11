@@ -6,8 +6,8 @@ export default function Header() {
   const { data: session } = useSession();
 
   return (
-    <header className="bg-blue-500 text-white p-6 shadow-lg">
-      <div className="container mx-auto flex justify-between items-center">
+    <header className="bg-blue-600 mt-2 text-white p-6 shadow-lg rounded-full">
+      <div className="container mx-auto flex justify-around items-center">
         <Link href="/" className="text-3xl font-extrabold hover:text-blue-200 transition-colors">
 
           Mind Gem

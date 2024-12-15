@@ -1,7 +1,5 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
+export default {
+  pages: {
+    "/auth/signup": { component: "SignUp" },
+  },
 };
-
-export default nextConfig;

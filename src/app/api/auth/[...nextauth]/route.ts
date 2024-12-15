@@ -10,8 +10,7 @@ const handler = NextAuth({
         password: { label: "Password", type: "password" }
       },
       async authorize(credentials, req) {
-        // Here you would usually query your database to find the user and validate the password
-        // For this example, we'll use a mock user
+
         if (credentials?.username === "user" && credentials?.password === "password") {
           return { id: "1", name: "J Smith", email: "jsmith@example.com" }
         }
